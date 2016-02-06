@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Credit Card"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#A4C639" />
+
+        <TextView
+            android:id="@+id/card_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="23dp"
+            android:text="Enter credit card balance($)"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0099FF" />
+
+        <EditText
+            android:id="@+id/card_balance_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CCCCCC"
+            android:ems="5"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/yearly_interest"
+            android:layout_alignLeft="@+id/yearly_interest_text"
+            android:layout_alignStart="@+id/yearly_interest_text">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/yearly_interest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/card_balance"
+            android:layout_marginTop="23dp"
+            android:text="Enter yearly interest)"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0099FF" />
+
+        <EditText
+            android:id="@+id/yearly_interest_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CCCCCC"
+            android:ems="5"
+            android:inputType="textPersonName"
+            android:layout_alignTop="@+id/yearly_interest"
+            android:layout_toRightOf="@+id/textView1"
+            android:layout_toEndOf="@+id/textView1">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/min_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/yearly_interest"
+            android:layout_marginTop="23dp"
+            android:text="Enter minimum payment"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0099FF" />
+
+        <EditText
+            android:id="@+id/min_payment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CCCCCC"
+            android:ems="5"
+            android:inputType="textPersonName"
+            android:layout_alignTop="@+id/min_payment"
+            android:layout_alignLeft="@+id/yearly_interest_text"
+            android:layout_alignStart="@+id/yearly_interest_text">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/final_card_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/min_payment"
+            android:layout_marginTop="23dp"
+            android:text="Final card balance($)"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0099FF" />
+
+        <EditText
+            android:id="@+id/final_card_balance_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CCCCCC"
+            android:ems="5"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/months_rem"
+            android:layout_alignLeft="@+id/min_payment_text"
+            android:layout_alignStart="@+id/min_payment_text">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/months_rem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/final_card_balance"
+            android:layout_marginTop="23dp"
+            android:text="Months remaining"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0099FF" />
+
+        <EditText
+            android:id="@+id/months_rem_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CCCCCC"
+            android:ems="5"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/interest_paid"
+            android:layout_alignLeft="@+id/final_card_balance_text"
+            android:layout_alignStart="@+id/final_card_balance_text">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/interest_paid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/months_rem"
+            android:layout_marginTop="23dp"
+            android:text="Interest paid will be"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0099FF" />
+
+        <EditText
+            android:id="@+id/interest_paid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CCCCCC"
+            android:ems="5"
+            android:inputType="textPersonName"
+            android:layout_alignTop="@+id/interest_paid"
+            android:layout_alignLeft="@+id/months_rem_text"
+            android:layout_alignStart="@+id/months_rem_text">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/compute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0099FF"
+            android:text="compute"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/interest_paid"
+            android:layout_marginTop="54dp"
+            android:layout_alignRight="@+id/card_balance_text"
+            android:layout_alignEnd="@+id/card_balance_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f98f96"
+            android:text="clear"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/compute"
+            android:layout_alignLeft="@+id/compute"
+            android:layout_alignStart="@+id/compute"
+            android:layout_alignRight="@+id/compute"
+            android:layout_alignEnd="@+id/compute" />
+
+    </RelativeLayout>
+
+</LinearLayout>
